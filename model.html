@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>model</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="copy.css">
+</head>
+<body>
+<center>
+<div class="container">
+<table border="4" id="show">
+<thead>
+<tr>
+<th>NAME</th>
+<th>EMAIL</th>
+<th>AGE</th>
+<th>PHONE NUMBER</th>
+</tr></thead>
+</table>
+<br>
+<button onclick="document.getElementById('id01').style.display='block'" class="button">Add Details</button>
+<div id="id01" style="background-color:white;" class="col-md-4">
+<div class="w3-modal-content">
+<header class="w3-container w3-teal"> 
+</header>
+<div class="w3-container">
+<table border="4">
+<br>
+<thead>
+<tr>
+<td colspan="2"><span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span></td>
+</tr>
+<tr>
+<th>NAME</th>
+<td><input type="text" name="fname" id="namefirst"></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>EMAIL</th>
+<td><input type="email" name="email" id="emailfirst"></td>
+</tr>
+<tr>
+<th>AGE</th>
+<td><input type="number" name="age" id="agefirst"></td>
+</tr>
+<tr>
+<th>PHONE NUMBER</th>
+<td><input type="number" name="pnum" id="phnfirst"></td>
+</tr>
+<tr id="btna">
+<td colspan="2"><input type="button" name="button" id="btn" value="Add"></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</center>
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var name=$("#namefirst").val();
+var email=$("#emailfirst").val();
+var age=$("#agefirst").val();
+var phone=$("#phnfirst").val();
+var row='<tr>'+'<td>'+name+'</td>'+'<td>'+email+'</td>'+'<td>'+age+'</td>'+'<td>'+phone+'</td>'+'</tr>'
+$("#show").append(row);
+});
+});
+
+</script>
+<script>
+var model=document.getElementById("mymodel");
+var btn=document.getElementById("mybtn");
+var span=document.getElementById("close");
+btn.onclick=function(){
+modal.style.display="block";
+}
+
+span.onclick=function(){
+modal.style.display="none";
+}
+
+window.onclick=function(event){
+if(event.target==modal){
+modal.style.display="none";
+}
+}
+</script>
+<script>
+$(document).ready(function(){
+$("#mytable").on('click','.del',function(){
+$ (this).closest('tr').remove();
+});
+});
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+.accordion {
+  background-color: #395566;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: 4px;
+  text-align: center;
+  outline: black;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #2f7473; 
+  color:white;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:#d1e2ed;
+  overflow: hidden;
+  color:black;
+}
+</style>
+</head>
+<body>
+
+<h1 align="center">ACCORDIAN</h1>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+<h1>heading 1</h1>
+<h2> accordian paragraph</h2>
+  <p>paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1 paragraph 1</p>
+</div>
+<br>
+<button class="accordion">Section 2</button>
+<div class="panel">
+<h1>heading 2</h1>
+<h2>accordian list</h2>
+  <ul>
+<li>list 1</li>
+<li>list 2</li>
+<li>list 3</li>
+ </ul>
+</div>
+<br>
+<button class="accordion">Section 3</button>
+<div class="panel">
+<h1>heading 3</h1>
+<h2> accordian links</h2>
+  <a href="datatable.html">data table</a>
+<br>
+  <a href="form.html">form</a>
+<br>
+<a href="reg.html">registration form</a>
+<br>
+</div>
+<br>
+<button class="accordion">Section 4</button>
+<div class="panel">
+<h1>heading 4</h1>
+<h2>accordian image</h2>
+<image src="3.jpg">
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var panel = this.nextElementSibling;
+if (panel.style.display === "block") {
+panel.style.display = "none";
+} else {
+panel.style.display = "block";
+}
+});
+}
+</script>
+
+</body>
+</html>

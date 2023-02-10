@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+*{
+box-sizing: border-box;
+}
+
+body, html {
+height: 100%;
+margin: 0;
+font-family: Arial;
+}
+.column{
+float:center;
+width:50%;
+padding:0 10px;
+}
+.row{
+margin:0 10px;
+}
+.row after{
+content:"";
+display:table;
+clear:both;
+}
+@media screen and (max-width:600px)
+{
+.column
+{
+width:100%;
+display:black;
+margin-bottom:20px;
+}
+}
+.tablink {
+background-color:#1c401c;
+color: white;
+float: left;
+border:white;
+outline: none;
+cursor: pointer;
+padding: 12px 15px;
+font-size: 17px;
+width: 20%;
+}
+
+.tablink:hover{
+background-color:#86af86;
+}
+.tabcontent{
+color:black;
+display: none;
+padding: 100px 20px;
+height:800px;
+}
+
+#Home{
+background-color:white;
+}
+#courses{
+background-color:white;
+}
+#register{
+background-color:pink;
+}
+#Contact{
+background-color:gray;
+color:white;
+}
+#About{
+background-color:white;
+}
+#image{
+height:200px;
+width:50%;
+}
+#image2{
+height:50%;
+width:50%;
+}
+#image3{
+height:20%;
+width:50%;
+}
+#btn1{
+height:30px;
+width:120px;
+background-color:blue;
+border:none;
+border-radius:5px;
+margin:8px;
+font-size:16px;
+color:white;
+}
+#btn2{
+height:30px;
+width:120px;
+background-color:blue;
+border:none;
+border-radius:5px;
+margin:2px;
+font-size:16px;
+color:white;
+}
+.card{
+box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+text-align:center;
+padding:15px;
+width:100%;
+height:400px;
+align:center;
+border-radius:10px;
+}
+.card2{
+align:center;
+box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+padding:30px;
+text-align:center;
+width:100%;
+height:700px;
+border-radius:10px;
+}
+.card3{
+align:center;
+box-shadow:0 0 3px 3px white,3px 3px 0 0 white;
+padding:15px;
+text-align:center;
+width:100%;
+height:600px;
+border-radius:10px;
+}
+.card4{
+align:center;
+box-shadow:0 0 3px 3px white,2px 2px 0 0 white;
+padding:15px;
+text-align:center;
+width:100%;
+height:700px;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home',this,'#813926')"  id="defaultOpen">home</button>
+<button class="tablink" onclick="openPage('courses',this,'#800055')">courses</button>
+<button class="tablink" onclick="openPage('register',this,'#424805')">register</button>
+<button class="tablink" onclick="openPage('Contact',this,'#460002')">Contact</button>
+<button class="tablink" onclick="openPage('About',this,'#1a5354')">About</button>
+
+<div id="Home" class="tabcontent">
+<center>
+<div class="card2">
+<h1>Hello,Everyone !</h1>
+<h1>welcome to my online course website</h1>
+<p>Welcome back to a wonderful year full of learning!<br> stay positive, have fun, and keep smiling!<br> You'll do great!</p>
+<image src="welcome.jpg" id="image"><br><br>
+<button id="btn1" type="submit">learn more>></button>
+</div>
+</center>
+</div>
+
+<div id="courses" class="tabcontent">
+<center>
+<h1>Choose any one course</h1>
+ <div class="container">
+<div class="row">
+<div class="column">
+ <div class="card">
+  <div class="card-header">
+  <h1>C cources</h1>
+  </div>
+   <div class="card-body">
+   <image src="c.jpg" id="image2">
+   <p>C is a high-level and general-purpose programming language that is ideal for developing firmware or portable applications. Originally intended for writing system software.</p>
+   </div>
+    <div class="card-footer">
+    <form method="POST" action="form.html">
+    <button id="btn2" type="submit">login >></button>
+    </form>
+</div>
+   </div></td>
+</div>
+<div class="column">
+<div class="card">
+<div class="card-header">
+<h1>python course</h1>
+</div>
+<div class="card-body">
+<image src="python.jpg" id="image2">
+<p>Python has a simple syntax similar to the English language. Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</p>
+</div>
+<div class="card-footer">
+<form method="POST" action="form.html">
+<button id="btn2" type="submit">login >></button>
+</form>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="card">
+<div class="card-header">
+<h1>java course</h1>
+</div>
+<div class="card-body">
+<image src="java.jpg" id="image3">
+<p>One of the most widely used programming languages, Java is used as the server-side language for most back-end development projects, including those involving big data and Android development.</p>
+</div>
+<div class="card-footer">
+<form method="POST" action="form.html">
+<button id="btn2" type="submit">login >></button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</center>
+</div>
+
+<div id="register" class="tabcontent">
+<center>
+<div class="card3">
+<h1 align="center">register</h1>
+<form name="form1" onsubmit="return(validate());">
+<hr width="450" align="center" height="10">
+<table align="center">
+<tr>
+<td height="50">Name of student</td>
+<td><input name="name" type="text" placeholder="enter your name"></td>
+<p id="p1"></p>
+</tr>
+<tr>
+<td height="50">Father's name</td>
+<td><input id="name" type="text" placeholder="enter your father name"></td>
+</tr>
+<tr>
+<td height="50">Mother's name</td>
+<td><input id="name" type="text" placeholder="enter your mother name"></td>
+</tr>
+<tr>
+<td height="50">Age</td>
+<td><input id="num" type="number" placeholder="enter your age"></td>
+</tr>
+<tr>
+<td>course</td>
+ 
+<td>
+<select>
+         <option selected>python</option>
+         <option>java</option>
+         <option>C program</option>
+       </select>
+</td>
+</tr>
+<tr>
+<td height="50">Phone number</td>
+<td><input id="num" type="number" placeholder="enter your phone number"></td>
+</tr>
+<tr>
+<td height="50">Gender</td>
+<td>
+<input type="radio" name="gender" value="male">
+<label>Male</label>
+<input type="radio" name="gender" value="female">
+<label>Female</label>
+</td>
+</tr>
+<tr>
+<td height="90" align="center"></td>
+<td><input type="submit" value="submit" ></td>
+</tr>
+</table>
+</form>
+</div>
+</center>
+</div>
+
+<div id="Contact" class="tabcontent">
+<center>
+<div class="card4">
+<center>
+<h1>Contact</h1>
+<h2>contact us</h2>
+<hr width="450" align="center">
+<table id="table2" width="400">
+  <tr>
+    <td height"30">Enter your name </td>
+    <td><input type="text" placeholder="enter name"></td>
+  </tr>
+
+<tr>
+    <td height"30">Enter your email </td>
+    <td><input type="email" placeholder="enter your email"></td>
+  </tr>
+<tr>
+    <td height"30">Enter your number </td>
+    <td><input type="tel" placeholder="enter your number"></td>
+  </tr>
+  <tr>
+    <td height"30">Age </td>
+    <td><input type="number" min="1" max"65" placeholder="enter your age"></td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>
+        <input type="radio"name="gender"value="Male">
+        <label>Male</label>
+        <input type="radio"name="gender"value="Female">
+        <label>Female</label>
+     </td>
+   </tr>
+   <tr>
+     <td>city</td>
+     <td>
+       <select>
+         <option selected>Chennai</option>
+         <option>Mumbai</option>
+         <option>karnataka</option>
+         <option>Andhra pradesh</option>
+         <option>Delhi</option>
+       </select>
+     </td>
+   </tr>
+   <tr>
+     <td>Languages known</td>
+     <td>
+         <input type="radio" name="l1">
+         <label>English</label>
+<br>
+         <input type="radio" name="l2">
+         <label>Hindi</label>
+<br>
+         <input type="radio" name"l3">
+         <label>Tamil</label>
+     </td>
+   </tr>
+   <tr>
+     <td height="50" align="center">
+         <input type="button"value="submit">
+     </td>
+   </tr>
+</table>
+</center>
+</div>
+</div>
+<div id="About" class="tabcontent">
+<h1>About</h1>
+<p>Who we are and what we do.</p>
+<a href="www.youtube.com" color="white">www.youtube.com</a>
+</div>
+</div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

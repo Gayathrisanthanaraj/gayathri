@@ -1,0 +1,61 @@
+<html>
+<head><title>reg-form</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<style>
+#head{
+text-align:center;
+color:#391aad;
+}
+body{
+font-family:cursive;
+font-size:20px;
+background:url('p11.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+margin-top:15px;
+</style>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-12" id="div">
+<div id="head" >
+<h2>Stone Paper Scissor Game</h2>
+</div>
+<div class="col-md-4">
+<div class="card w-75">
+<div class="card-body">
+<h4 class="card-title">Rules......</h4>
+<hr class="line">
+<h4 style="margin-left:5%;">stone+paper=stone win</h4>
+<h4 style="margin-left:5%;">stone+scisor=scisor win</h4>
+<h4 style="margin-left:5%;">stone+stone=trop game</h4>
+<h4 style="margin-left:5%;">scisor+paper=scisor win</h4>
+<h4 style="margin-left:5%;">paper+paper=trop game</h4>
+<h4 style="margin-left:5%;">scisor+scisor=trop game</h4>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<h2 style="margin-left:5%;">.....choose any one....</h2>
+<form action="/con" method="post" style="margin-top:25%; margin-left:25%; font-size:20%;">
+ 
+    <h4><input type="radio" name="game" value="stone">
+    <label style="font-size:200%"> Stone</label></h4>
+    <h4><input type="radio" name="game" value="paper">
+    <label style="font-size:200%"> paper</label></h4>
+    <h4><input type="radio" name="game" value="scisor">
+    <label style="font-size:200%"> scissor</label></h4><br><br>
+
+<div class=d-grid gap-1">
+    <button type="button" value="PLAY" class="btn btn-block btn-primary">submit</button>
+</div></form>
+</div>
+<div class="col-md-4">
+</div>
+</body>
+</html>

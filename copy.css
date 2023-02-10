@@ -1,0 +1,30 @@
+table{
+margin-top:50px;
+text-align:center;
+background:#333;
+color:#fff;
+}
+
+body{
+background-color:#d18dc275;
+}
+
+#show th,#show td{
+padding:13px;
+}
+
+#btna td input{
+width:100%;
+}
+
+.w3-container{
+background:#d18dc275;
+}
+
+.close{
+background:#d18dc275;
+color:#d18dc275;
+float:right;
+font-size:100px;
+font-weight:bold;
+}
